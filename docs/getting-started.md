@@ -140,6 +140,25 @@ Keep your living documents current:
 # Cross-reference entries in the "Related" sections
 ```
 
+### 4. Share with Your Organization
+
+Once you have a solid summary document:
+
+1. **Import to Google Docs:**
+   - Copy the contents of `docs/summary.md`
+   - Create a new Google Doc
+   - Use "Edit > Paste special > Paste from markdown" to import with proper formatting
+
+2. **Enable collaboration:**
+   - Share the Google Doc with relevant team members and stakeholders
+   - Set appropriate permissions (view/comment/edit based on your needs)
+   - Invite feedback and additional perspectives
+
+3. **Maintain the feedback loop:**
+   - Incorporate Google Doc comments and edits back into your markdown files
+   - Update your local repository with new insights from broader collaboration
+   - Create new entries for significant discoveries from organizational feedback
+
 ## Customization
 
 ### Adapting for Your Domain
@@ -195,6 +214,13 @@ Keep your living documents current:
 - Review and refine entries periodically
 - Use git history to track how understanding changes over time
 - Cross-reference related entries to build knowledge connectivity
+
+### Organizational Sharing
+- Import summary documents to Google Docs for broader collaboration
+- Use "Paste from markdown" to preserve formatting and structure
+- Enable commenting and editing to gather diverse perspectives
+- Maintain feedback loops between Google Docs and your repository
+- Create new entries based on organizational feedback and discoveries
 
 ### Collaborative Intelligence
 - Treat AI as a collaborative partner, not just a tool
