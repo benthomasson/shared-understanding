@@ -24,6 +24,7 @@ Exploration of how both humans and AI suffer from similar memory limitations tha
 - **Semantic Drift**: Gradual loss of precise meaning through probabilistic token generation
 - **No Persistent Memory**: Claude currently lacks long-term memory across conversations
 - **Session Isolation**: Each conversation starts fresh without access to previous interactions
+- **Temporal Confusion**: Attention mechanisms may lose track of when information was provided, weighting old and new information equally
 
 ### The Familiarity vs. Understanding Problem
 
@@ -96,6 +97,42 @@ Both humans and AI can fall into the trap of **familiarity masquerading as under
 - Allows extraction of key insights from lengthy technical discussions
 - Provides backup mechanism when entry creation is missed during active conversations
 
+### Temporal Information Weighting Problem
+
+**The Challenge**: Both AI and logic systems struggle with temporal context and information recency.
+
+**AI Attention Mechanism Issues:**
+- **Equal Weighting**: Attention mechanisms may treat information from the beginning and end of context equally
+- **Date Blindness**: Without explicit temporal markers, AI cannot distinguish between old and new information
+- **Conflicting Information**: When contradictory information appears across time, AI may not prioritize the most recent
+- **Feedback Observation**: Users report AI confusion when timeline of information is unclear
+
+**Logic System Parallels:**
+- **Belief Revision Problem**: New information should update beliefs, but full reevaluation is computationally expensive
+- **Non-monotonic Reasoning**: Adding new information may require retracting previous conclusions
+- **Temporal Logic Complexity**: Maintaining consistent temporal relationships across large knowledge bases
+
+**Entry Date Structure as Solution:**
+
+**Hypothesis**: Explicit chronological organization helps both humans and AI understand information evolution.
+
+**Potential Benefits:**
+1. **Clear Temporal Context**: YYYY/MM/DD structure provides unambiguous timestamps
+2. **Recency Signals**: Newer entries can be explicitly identified and prioritized
+3. **Evolution Tracking**: Understanding can be traced through time with clear progression
+4. **Contradiction Resolution**: When beliefs change, timeline helps identify which information supersedes which
+
+**Early Observations:**
+- Positive feedback from users on chronological organization
+- Need for longer-term evaluation to confirm effectiveness
+- Potential for AI to better track information recency when explicitly structured
+
+**Future Research Questions:**
+1. Does explicit dating improve AI's temporal reasoning?
+2. How should conflicting information across dates be handled?
+3. Can entry cross-references help maintain temporal consistency?
+4. What metadata beyond dates might improve temporal understanding?
+
 ## Next Steps
 
 1. Develop practices for identifying when familiarity is masquerading as understanding
@@ -103,6 +140,9 @@ Both humans and AI can fall into the trap of **familiarity masquerading as under
 3. Establish methods for testing true comprehension versus pattern recognition
 4. Design entry templates that force articulation of assumptions and gaps
 5. Implement cross-referencing strategies to maintain knowledge connectivity
+6. **Temporal Weighting Evaluation**: Continue monitoring whether chronological structure improves AI temporal reasoning
+7. **Contradiction Handling**: Develop protocols for resolving conflicting information across different entry dates
+8. **Metadata Enhancement**: Explore additional temporal metadata beyond dates (urgency, confidence levels, superseded status)
 
 ## Related
 
