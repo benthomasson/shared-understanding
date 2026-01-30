@@ -21,6 +21,7 @@ Shared understanding requires overcoming the cognitive limitations that both hum
 - Markdown serves as universal external memory for both humans and AI
 - Chronological organization (YYYY/MM/DD) provides temporal context
 - Standardized templates ensure consistent knowledge capture
+- **Git repository foundation**: Version-controlled, shareable, collaborative knowledge base
 
 ### 3. Collaborative Intelligence Workflow
 - **Pre-Meeting**: Import Jira issue context for discussion foundation
@@ -39,6 +40,7 @@ Shared understanding requires overcoming the cognitive limitations that both hum
 ## Current Implementation
 
 ### Technology Stack
+- **Git Repository Foundation**: Version-controlled knowledge base that can be forked, shared, and collaborated on
 - **Entry Creation**: `new_entry` script for automated date structure
 - **External Integrations**: 
   - `jirahhh` for issue management
@@ -46,6 +48,7 @@ Shared understanding requires overcoming the cognitive limitations that both hum
   - `slacker` for Slack integration
 - **Memory Persistence**: `claude-projects` for conversation archival
 - **Documentation Format**: Markdown with standardized templates
+- **Collaboration**: Standard git workflows for sharing and merging understanding across teams
 
 ### Information Architecture
 ```
@@ -98,6 +101,14 @@ shared-understanding/
 - Combined approach achieves more comprehensive understanding
 - Structured documentation preserves insights for future access
 - Clear traceability from issues through meetings to final understanding
+
+### Git-Based Knowledge Sharing
+- **Version Control**: Complete history of how understanding evolved over time
+- **Branching**: Different teams can explore understanding branches and merge insights
+- **Forking**: Organizations can adapt the framework for their specific domains
+- **Pull Requests**: Systematic review and integration of new insights
+- **Distributed Collaboration**: Teams across locations can contribute to shared understanding
+- **Standard Workflows**: Familiar git operations (clone, commit, push, merge) for knowledge management
 
 ### Organizational Knowledge Sharing
 - **Google Docs Integration**: Import markdown summary using "Paste from markdown"
