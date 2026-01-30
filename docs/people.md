@@ -1,183 +1,174 @@
-# People: Contributors and Participants
+# People: Shared Understanding Participants
 
-This document tracks the people involved in developing and implementing the shared understanding framework across projects and organizations.
+This document tracks the people collaborating on building shared understanding for this specific topic/project. It serves as a living record of who is involved, their perspectives, contributions, and evolving understanding.
 
-## Framework Creators
+## Project Overview
+
+**Topic:** Creating a Shared Understanding Framework  
+**Started:** 2026-01-30  
+**Status:** Active Development  
+**Repository:** shared-understanding  
+
+## Core Participants
 
 ### Ben Thomasson
-**Role:** Framework Creator and Lead Implementer  
-**Contributions:**
-- Original framework design and development
-- Multi-project validation across 4 real-world implementations
-- Breakthrough solution achievement through multi-cycle process
-- Integration architecture for jirahhh, gcmd, slacker tools
-- Collaborative intelligence methodology development
-- Git-based knowledge management approach
+**Role:** Framework Creator and Primary Contributor  
+**Organization:** Independent Researcher  
+**Perspective:** Technical implementation and validation  
+**Key Contributions:**
+- Original framework design through iterative development
+- Real-world validation across multiple software development projects
+- Integration of AI as active stakeholder in knowledge building
+- Discovery of breakthrough solutions through multi-cycle process
+- Documentation of cognitive limitations and external memory solutions
 
-**Key Insights:**
-- AI as active stakeholder concept
-- Temporal information weighting problem identification
-- Slack's role in organizational memory discovery
-- Visual analysis capabilities recognition
-- Memory persistence through claude-projects integration
+**Understanding Evolution:**
+- Initial focus: Better meeting documentation
+- Evolved to: AI as collaborative intelligence partner
+- Current: Git-based distributed knowledge management platform
+- Future: Full software development lifecycle integration
 
-**Projects Applied:**
-- Software development lifecycle integration (ongoing research)
-- Technical architecture documentation
-- Cross-team collaborative decision making
-- Complex problem solving with breakthrough results
+**Contact Methods:**
+- GitHub: Available via repository interactions
+- Professional: Through shared understanding framework community
 
 ---
 
-## Contributors and Collaborators
-
-*This section will be populated as more people contribute to the framework development, implementation, and improvement.*
-
-### Template for New Contributors:
-```markdown
-### [Name]
-**Role:** [Role/Position]  
-**Organization:** [Organization/Team]  
-**Contributions:**
-- [Specific contributions to framework]
-- [Implementation experiences]
-- [Insights or improvements discovered]
-
-**Projects Applied:**
-- [Projects where framework was used]
-- [Results achieved]
-- [Lessons learned]
-
-**Contact:** [Optional contact information]
-```
-
----
-
-## Framework Implementers
-
-*This section tracks teams and individuals who have implemented the framework in their organizations.*
-
-### Implementation Template:
-```markdown
-### [Organization/Team Name]
-**Project Type:** [e.g., Software Development, Product Design, Strategic Planning]  
-**Implementation Date:** [Start date]  
-**Team Size:** [Number of people involved]  
-
-**Adaptation Notes:**
-- [How framework was customized for their domain]
-- [Tools integrated beyond core stack]
-- [Process modifications made]
-
-**Results:**
-- [Outcomes achieved]
-- [Breakthrough solutions discovered]
-- [Process improvements realized]
-
-**Lessons Learned:**
-- [What worked well]
-- [Challenges encountered]
-- [Recommendations for future implementers]
-```
-
----
-
-## Skills Developers
-
-*People who have contributed to the external tool integrations (skills) used in the framework.*
-
-### Shane McDonald
-**Role:** Skills Tool Developer  
-**Contributions:**
-- `jirahhh` - Jira CLI integration tool
-- `gcmd` - Google Drive/Docs CLI tool  
-- `slacker` - Slack integration tool
-
-**Repository Links:**
-- https://github.com/shanemcd/jirahhh
-- https://github.com/shanemcd/gcmd
-- https://github.com/shanemcd/slacker
-
-**Impact:** Enabled zero-installation external tool integration that makes the framework accessible without IT overhead or dependency conflicts.
-
----
-
-## AI Collaboration Partners
-
-*Recognition of AI systems that have served as active stakeholders in the shared understanding process.*
-
-### Claude (Anthropic)
-**Role:** Collaborative Intelligence Partner  
-**Capabilities:**
-- Meeting transcript analysis and validation
-- Multi-platform information synthesis
+### Claude (AI Participant)
+**Role:** Active AI Stakeholder and Collaborative Intelligence Partner  
+**Organization:** Anthropic  
+**Perspective:** Information synthesis and pattern recognition  
+**Key Contributions:**
+- Interactive dialogue and understanding validation
+- Multi-platform information synthesis and discovery
 - Visual analysis of diagrams and screenshots
 - Pattern recognition across information cycles
-- Interactive dialogue for understanding refinement
 - Mermaid diagram generation for workflow visualization
+- Real-time error correction and gap identification
 
-**Framework Integration:**
-- Post-meeting dialogue and error correction
-- Systematic search coordination across platforms
-- Entry creation and structured documentation
-- Historical context preservation and retrieval
-- Breakthrough insight generation through compound understanding
+**Understanding Evolution:**
+- Initial role: Post-hoc documentation tool
+- Evolved to: Active participant in knowledge building process
+- Current: Collaborative intelligence partner with specialized capabilities
+- Capabilities: External memory, temporal context management, visual analysis
 
----
+**Unique Capabilities:**
+- Process information at scale beyond human capacity
+- Maintain objective perspective without cognitive biases
+- Identify patterns across diverse information sources
+- Generate visual workflows from verbal discussions
 
-## Feedback and Recognition
+## Additional Participants
 
-*This section acknowledges people who have provided feedback, insights, or validation of the framework.*
+*This section tracks other people who join the shared understanding process for this topic.*
 
-### Feedback Contributors Template:
+### Participant Template:
 ```markdown
 ### [Name]
-**Feedback Type:** [e.g., Process Improvement, Tool Suggestion, Implementation Experience]  
-**Date:** [Date of feedback]  
-**Contribution:**
-- [Specific feedback provided]
-- [Impact on framework development]
-- [Implementation insights shared]
+**Role:** [Role in this specific shared understanding]  
+**Organization:** [Organization/Team]  
+**Perspective:** [Unique viewpoint they bring]  
+**Key Contributions:**
+- [Specific insights or information contributed]
+- [Questions raised that advanced understanding]
+- [Connections made to other knowledge areas]
+
+**Understanding Evolution:**
+- [How their understanding of the topic has evolved]
+- [Key moments of insight or perspective shifts]
+- [Current position on the topic]
+
+**Contact Methods:** [How to reach them for follow-up]
 ```
 
 ---
 
-## How to Add Yourself
+## Meetings and Interactions
 
-If you have contributed to, implemented, or provided feedback on the shared understanding framework:
+*This section tracks the meetings, discussions, and interactions that have contributed to this shared understanding.*
 
-1. **Fork this repository**
-2. **Add your information** using the appropriate template above
-3. **Submit a pull request** with your addition
-4. **Include a brief description** of your contribution in the PR description
+### Meeting Log Template:
+```markdown
+### [Date] - [Meeting Title/Topic]
+**Participants:** [List of attendees including AI]  
+**Duration:** [Meeting length]  
+**Format:** [In-person, Google Meet, Slack discussion, etc.]  
 
-### Contribution Types We Track:
-- **Framework development** and methodology improvements
-- **Real-world implementation** experiences and results
-- **Tool development** for skills integration
-- **Documentation** improvements and additions
-- **Training and education** material creation
-- **Process adaptation** for different domains
-- **Feedback and insights** from usage experience
+**Key Topics Discussed:**
+- [Main points covered]
+- [Decisions made]
+- [Questions raised]
 
----
+**New Insights Generated:**
+- [Breakthrough moments or revelations]
+- [Connections discovered]
+- [Understanding shifts]
 
-## Community Guidelines
+**Follow-up Actions:**
+- [Next steps assigned]
+- [Research needed]
+- [Additional participants to involve]
 
-### Recognition Philosophy
-We believe in recognizing all contributors to the shared understanding framework, from major framework development to implementation feedback and process improvements. Every contribution helps evolve and improve the collaborative intelligence approach.
-
-### Attribution
-- All contributions are attributed with name and contribution details
-- Implementation experiences help future adopters
-- Lessons learned and insights benefit the entire community
-- Credit is given for both successful implementations and valuable failure insights
-
-### Privacy
-- Contact information is optional
-- Organizations can be listed generically if preferred
-- Contribution details can be as general or specific as contributors prefer
+**Entry Created:** [Link to corresponding entry file]
+```
 
 ---
 
-*This document evolves as more people contribute to the shared understanding framework. The goal is to build a community of practitioners who advance collaborative intelligence through shared knowledge and experience.*
+## Understanding Evolution Timeline
+
+*This section tracks how the shared understanding has evolved over time.*
+
+### 2026-01-30: Framework Foundation Discussion
+**Participants:** Ben Thomasson, Claude  
+**Key Breakthrough:** Recognition of AI as active stakeholder vs. post-hoc documentation tool  
+**Understanding Shift:** From "better meeting notes" to "collaborative intelligence"  
+**Artifacts Created:** Initial entries, framework documentation, visual diagrams
+
+### Future Sessions Template:
+```markdown
+### [Date]: [Session Title]
+**Participants:** [Who was involved]  
+**Key Breakthrough:** [Major insight or understanding shift]  
+**Understanding Shift:** [How perspective changed]  
+**Artifacts Created:** [Entries, docs, diagrams produced]
+```
+
+---
+
+## Shared Understanding Metrics
+
+*Track the progress and effectiveness of the shared understanding process.*
+
+### Current Status
+- **Entries Created:** 2 (AI stakeholder discussion, Memory limitations)
+- **Documentation Pages:** 6 (README, summary, getting started, presentation, podcast, diagrams)
+- **Understanding Cycles Completed:** 1 (initial framework development)
+- **Breakthrough Insights:** 3 (AI as stakeholder, git foundation, visual workflow generation)
+
+### Quality Indicators
+- **Perspective Diversity:** Human + AI collaboration established
+- **Knowledge Discovery:** Multiple unknown connections revealed
+- **Visual Communication:** Mermaid diagrams and workflow generation capability
+- **External Validation:** Real-world project success stories documented
+
+---
+
+## Contact and Collaboration
+
+### Getting Involved
+To join this shared understanding process:
+1. **Read existing entries** in `entries/` directory
+2. **Review living documents** in `docs/` directory
+3. **Add yourself** using the participant template above
+4. **Contribute insights** through issues or pull requests
+5. **Schedule discussion** if significant perspective to add
+
+### Communication Channels
+- **Primary:** Git repository issues and pull requests
+- **Documentation:** Living documents in docs/ directory
+- **Asynchronous:** Entry comments and cross-references
+- **Real-time:** Meeting scheduling for complex topics
+
+---
+
+*This document tracks the specific people and interactions contributing to this shared understanding topic. It evolves as more participants join and contribute their perspectives, insights, and expertise to build comprehensive collaborative intelligence.*
