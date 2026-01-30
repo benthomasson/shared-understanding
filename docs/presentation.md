@@ -75,6 +75,7 @@
 **[Title: Zero-Installation Integration with Your Existing Tools]**
 
 **Core Components:**
+- **Git Repository Foundation**: Version-controlled knowledge base that can be forked, shared, and collaborated on
 - **Chronological Entries**: Date-structured documentation (entries/YYYY/MM/DD/)
 - **Living Documents**: Evolving summaries and architectural plans (docs/)
 - **External Integrations**: Jira, Google Drive, Slack via uvx (zero installation)
@@ -96,7 +97,7 @@ uvx slacker search "technical decision keywords"
 claude-projects convert ~/.claude/projects to markdown
 ```
 
-*"Everything runs without installation using uvx - no IT overhead, no dependency conflicts, plus visual understanding and persistent memory."*
+*"Git-based knowledge sharing with familiar workflows - fork, commit, merge, pull request. No IT overhead, no dependency conflicts, plus visual understanding and persistent memory."*
 
 ---
 
@@ -166,9 +167,9 @@ claude-projects convert ~/.claude/projects to markdown
 **[Title: Implementation in Your Organization]**
 
 **Week 1: Setup**
-- Fork the shared-understanding repository
+- Fork the shared-understanding repository (just like any code project!)
 - Configure skills for your Jira, Google Drive, and Slack
-- Run through first entry creation workflow
+- Run through first entry creation workflow with git commits
 
 **Week 2: First Real Topic**
 - Choose a current issue or decision
@@ -194,6 +195,7 @@ claude-projects convert ~/.claude/projects to markdown
 - Chronological structure solves AI temporal weighting problems
 - Multiple cycles create compound understanding effects
 - Conversation archival provides persistent AI memory
+- Git repository enables distributed knowledge collaboration
 - The framework scales from individual teams to organizational knowledge
 
 **Active Research:**

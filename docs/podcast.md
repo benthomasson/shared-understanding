@@ -84,7 +84,7 @@ But then comes the real magic - the information discovery phase.
 
 **SARAH:** So you combine AI's ability to synthesize with Slack's ability to find?
 
-**BEN:** Right. And then we document everything using what I call the "new_entry" system - chronologically organized markdown files with a standardized template. The date structure is crucial because it helps AI understand information evolution over time.
+**BEN:** Right. And then we document everything using what I call the "new_entry" system - chronologically organized markdown files with a standardized template in a git repository. The date structure is crucial because it helps AI understand information evolution over time, and git gives us version control, collaboration, and sharing just like any software project.
 
 ---
 
@@ -142,7 +142,7 @@ Because Claude has access to the complete decision history, organizational knowl
 
 **SARAH:** What about memory persistence? You mentioned AI doesn't remember across sessions.
 
-**BEN:** That's solved by something called the claude-projects tool. It converts conversation logs to searchable markdown. So previous technical discussions become referenceable context for future decisions. We're building a memory system for AI that spans months or years.
+**BEN:** That's solved by something called the claude-projects tool. It converts conversation logs to searchable markdown that gets committed to the git repository. So previous technical discussions become referenceable context for future decisions. We're building a version-controlled memory system for AI that spans months or years, with complete history of how understanding evolved.
 
 **SARAH:** This feels like it could change how technical teams operate fundamentally.
 
@@ -154,7 +154,7 @@ Because Claude has access to the complete decision history, organizational knowl
 
 **SARAH:** For teams listening who want to try this, where do they start?
 
-**BEN:** The good news is everything is available as open source. There's a complete repository called "shared-understanding" with step-by-step setup instructions. You can fork it, clear out our example content, and start with your own topics.
+**BEN:** The good news is everything is available as open source. There's a complete git repository called "shared-understanding" with step-by-step setup instructions. You can fork it just like any code project, clear out our example content, and start with your own topics. Teams can collaborate on understanding the same way they collaborate on code.
 
 **SARAH:** What's the learning curve like?
 
@@ -186,7 +186,7 @@ When you design systems that address those limitations systematically, breakthro
 
 **SARAH:** And where can people find all the resources you mentioned?
 
-**BEN:** Everything is in the shared-understanding repository on GitHub. Complete documentation, getting started guide, example entries, skill configurations. Plus the claude-projects tool for conversation archival. All open source, ready to use.
+**BEN:** Everything is in the shared-understanding git repository on GitHub. Complete documentation, getting started guide, example entries, skill configurations. Plus the claude-projects tool for conversation archival. All open source, ready to fork and use. Teams can treat their shared understanding like any other collaborative codebase.
 
 **SARAH:** Listeners, I'll put all those links in the show notes. Ben Thomasson, thank you for sharing this framework. I have a feeling this is going to change how a lot of teams approach complex problems.
 
