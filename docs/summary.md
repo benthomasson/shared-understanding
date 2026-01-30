@@ -29,6 +29,7 @@ Shared understanding requires overcoming the cognitive limitations that both hum
 - **Post-Meeting**: Import transcripts and engage in validation dialogue
 - **Information Gathering**: Systematic search across Jira, Google Drive, Slack
 - **Visual Analysis**: Screenshot/diagram interpretation adds visual understanding
+- **Workflow Generation**: Create mermaid diagrams and flowcharts from meeting notes to assist human understanding
 - **Knowledge Discovery**: Often reveals information unknown to participants
 - **Documentation**: Synthesize all context into structured entries
 
@@ -88,6 +89,7 @@ shared-understanding/
 - Systematic search reveals unknown relevant information
 - Cross-platform synthesis beyond human manual capability
 - Visual analysis extends understanding to diagrams and screenshots
+- **Workflow visualization**: Generate mermaid diagrams and flowcharts from complex discussions
 - Historical context from previous issues and conversations
 
 ### Quality Assurance
@@ -136,6 +138,12 @@ Beyond shared understanding documentation, the framework is being applied to com
 - Claude receives complete project context through the framework
 - Historical decisions and rationale preserved and accessible
 - Cross-platform knowledge synthesis for technical decisions
+
+**Visual Communication**
+- Generate mermaid diagrams, flowcharts, and process visualizations from meeting discussions
+- Transform complex verbal discussions into clear visual workflows
+- Support feedback sessions with visual representation of proposed processes
+- Enable stakeholder understanding through diagram-based communication
 
 ### Active Research (In Progress)
 **Current Investigation**: Application of the shared understanding framework through complete software development lifecycle phases, from initial understanding through implementation.
