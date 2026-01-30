@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+"""
+Create new entry in the entries directory with today's date structure.
+Usage: ./new_entry <filename> [title]
+"""
+
+import os
+import sys
+import argparse
+from datetime import datetime
+from pathlib import Path
+
+def create_new_entry(filename, title=None, open_editor=False):
+    """Create a new entry with today's date directory structure."""
+    
+    # Get today's date
+    now = datetime.now()
+    year = now.strftime("%Y")
+    month = now.strftime("%m")
+    day = now.strftime("%d")
+    
+    # Create the directory structure
+    base_dir = Path(__file__).parent
+    entry_dir = base_dir / "entries" / year / month / day
+    entry_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Ensure filename ends with .md
+    if not filename.endswith('.md'):
+        filename += '.md'
+    
+    # Create the file path
+    file_path = entry_dir / filename
+    
+    # Check if file already exists
+    if file_path.exists():
+        print(f"File already exists: {file_path}")
+        if open_editor:
+            editor = os.environ.get('EDITOR', 'nano')
+            os.system(f'{editor} "{file_path}"')
+        return
+    
+    # Create the file with basic template
+    template_title = title or filename.replace('.md', '').replace('-', ' ').title()
+    template = f"""# {template_title}
+
+**Date:** {now.strftime('%Y-%m-%d')}
+**Time:** {now.strftime('%H:%M')}
+
+## Overview
+
+## Details
+
+## Next Steps
+
+## Related
+
+"""
+    
+    with open(file_path, 'w') as f:
+        f.write(template)
+    
+    print(f"Created new entry: {file_path}")
+    
+    # Open in editor if requested
+    if open_editor:
+        editor = os.environ.get('EDITOR', 'nano')
+        os.system(f'{editor} "{file_path}"')
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Create new entry with today\'s date directory structure',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  ./new_entry investigation
+  ./new_entry saas-routing-analysis "SaaS Routing Analysis"
+  ./new_entry billing-data-flow.md "Billing Data Flow Investigation"
+  ./new_entry --edit meeting-notes "Meeting Notes"
+        """
+    )
+    
+    parser.add_argument('filename', help='Name of the entry file (without .md extension)')
+    parser.add_argument('title', nargs='?', help='Title for the entry (optional)')
+    parser.add_argument('--edit', '-e', action='store_true', help='Open the created file in your default editor')
+    
+    if len(sys.argv) == 1:
+        parser.print_help()
+        return
+    
+    args = parser.parse_args()
+    create_new_entry(args.filename, args.title, args.edit)
+
+if __name__ == '__main__':
+    main()
