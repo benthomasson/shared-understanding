@@ -15,7 +15,7 @@ This is a framework for building shared understanding of problems or topics with
 - Cross-referencing support for linking related entries and external resources
 
 ### Skills System
-- Modular integration documentation in `/skills/` directory
+- Modular integration documentation in `/.claude/skills/` directory
 - Three main integrations: gcmd (Google Drive), jirahhh (Jira), slacker (Slack)
 - Each skill uses `uvx` for installation-free execution of external CLI tools
 - Skills are self-contained with comprehensive SKILL.md documentation
