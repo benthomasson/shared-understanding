@@ -10,7 +10,7 @@ This is a framework for building shared understanding of problems or topics with
 
 ### Entry Management System
 - Chronologically organized documentation using `entries/YYYY/MM/DD/` structure
-- Automated entry creation via `./new_entry <filename> [title]` Python script
+- Automated entry creation via `entry create` command (install with `uv tool install git+https://github.com/benthomasson/entry`)
 - Standardized markdown template with Overview, Details, Next Steps, and Related sections
 - Cross-referencing support for linking related entries and external resources
 
@@ -25,10 +25,10 @@ This is a framework for building shared understanding of problems or topics with
 ### Entry Management
 ```bash
 # Create new entry with automatic date structure
-./new_entry investigation-findings "Investigation Findings"
+entry create "Investigation Findings"
 
 # Create entry and open in editor
-./new_entry --edit meeting-notes "Meeting Notes"
+entry create "Meeting Notes" --edit
 
 # Find entries by date
 find entries/2026/01/30 -name "*.md"
@@ -54,7 +54,7 @@ uvx --from "git+https://github.com/shanemcd/slacker" slacker reminder create "15
 
 ## Development Workflow
 
-1. **Documentation Creation**: Use `./new_entry` to maintain consistent chronological organization
+1. **Documentation Creation**: Use `entry create` to maintain consistent chronological organization
 2. **Topic Separation**: Create separate entries for different investigation areas
 3. **External Data Import**: Leverage skills to import content from Google Drive, Jira, and Slack
 4. **Cross-referencing**: Link related entries in "Related" sections for knowledge connectivity
@@ -62,7 +62,7 @@ uvx --from "git+https://github.com/shanemcd/slacker" slacker reminder create "15
 
 ## Technology Stack
 
-- **Core Language**: Python 3 (for new_entry script)
+- **Entry Tool**: `entry` CLI (install via uvx or uv tool)
 - **Documentation Format**: Markdown with standardized templates
 - **External Tools**: CLI tools managed via uvx (no local installation required)
 - **File Organization**: Date-based hierarchical structure
