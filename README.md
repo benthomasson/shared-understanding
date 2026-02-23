@@ -36,20 +36,41 @@ A proven framework for collaborative intelligence that combines human insight wi
 
 ### Creating Your First Entry
 
-Use the `new_entry` script to create structured documentation:
+Install and use the `entry` CLI to create structured documentation:
 
 ```bash
-# Basic usage - creates file with today's date
-./new_entry investigation-findings
+# Install entry CLI
+uv tool install git+https://github.com/benthomasson/entry
 
-# With custom title
-./new_entry saas-routing-analysis "SaaS Routing Analysis"
+# Create entry with title (auto-generates kebab-case filename)
+entry create "Investigation Findings"
 
 # Open in editor after creation
-./new_entry --edit meeting-notes "Meeting Notes"
+entry create "Meeting Notes" --edit
 ```
 
 This will create a markdown file in the `entries/YYYY/MM/DD/` directory with a standardized template.
+
+### Tracking Beliefs and Contradictions
+
+Use the `beliefs` CLI to track claims and detect contradictions:
+
+```bash
+# Install beliefs CLI
+uv tool install git+https://github.com/benthomasson/beliefs
+
+# Initialize belief tracking
+beliefs init
+
+# Add a claim
+beliefs add --id my-claim --text "Our finding" --source entries/2026/02/10/finding.md
+
+# Check for stale beliefs
+beliefs check-stale
+
+# List contradictions
+beliefs nogoods
+```
 
 ### Finding and Organizing Entries
 
@@ -74,6 +95,8 @@ find entries/2026/01 -name "*.md" | sort
 ### 🔧 External Tool Integration (Skills)
 Integration with common workplace tools through CLI interfaces:
 
+- **Entry** (`entry`): Create chronologically organized documentation entries
+- **Beliefs** (`beliefs`): Track claims, dependencies, and contradictions
 - **Google Drive** (`gcmd`): Export docs as markdown, manage sheets and files
 - **Jira** (`jirahhh`): Create, update, and search issues with wiki markup
 - **Slack** (`slacker`): Manage reminders, search messages, check activity
@@ -91,14 +114,15 @@ All skills use `uvx` for installation-free execution.
 shared-understanding/
 ├── README.md           # This file - framework overview
 ├── CLAUDE.md          # Guidance for Claude Code AI assistant
-├── new_entry*         # Entry creation script
 ├── docs/              # Living documentation
 │   ├── summary.md     # Complete framework summary
 │   └── getting-started.md  # Setup and implementation guide
 ├── entries/           # Chronological documentation
 │   ├── README.md      # Entry system documentation  
 │   └── YYYY/MM/DD/    # Date-organized entries
-└── skills/            # External tool integrations
+└── .claude/skills/    # External tool integrations
+    ├── entry/         # Entry creation CLI
+    ├── beliefs/       # Belief tracking CLI
     ├── gcmd/          # Google Drive CLI integration
     ├── jirahhh/       # Jira CLI integration
     └── slacker/       # Slack CLI integration
@@ -120,6 +144,12 @@ shared-understanding/
 All integrations use `uvx` for installation-free execution:
 
 ```bash
+# Entry creation
+uvx --from "git+https://github.com/benthomasson/entry" entry create "My Finding"
+
+# Belief tracking
+uvx --from "git+https://github.com/benthomasson/beliefs" beliefs nogoods
+
 # Google Drive integration
 uvx --from "git+https://github.com/shanemcd/gcmd" gcmd export "DOC_URL" -o /tmp/
 
